@@ -2,7 +2,7 @@
 
 RegexSourceDataModel::
 RegexSourceDataModel()
-  : _lineEdit(new QLineEdit(""))
+  : _lineEdit(new QLineEdit("([A-Z])"))
 {
   connect(_lineEdit, &QLineEdit::textEdited,
           this, &RegexSourceDataModel::onTextEdited);
